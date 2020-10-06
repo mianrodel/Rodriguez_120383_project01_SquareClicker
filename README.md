@@ -1,8 +1,4 @@
 # Square Clicker
-This game is  based on an aim training game, you click on the squares as soon as they appear. At the end you can view your time and accuracy. Enjoy!
+This game is based on an aim training game, you click on the squares as soon as they appear. At the end you can view your time and accuracy and it compares to predetermined rankings. A function generates a window, afterward another function takes the user's click and then the main function starts. There are some functions nested inside the main game function to execute some process like calculating scores and rankings.
 
-"*It delivers a layered, emotionally shattering story on top of stealth and action gameplay that improves the first game's mechanics while integrating a bit more of Uncharted's greater mobility and action.*"
--**IGN**
 
-"*iconic*"
--**Polygon**
