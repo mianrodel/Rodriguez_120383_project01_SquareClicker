@@ -79,7 +79,28 @@ def data_claculate_print(points, t0, t1, win):
     final_score_data.draw(win)
     time_result.draw(win)
     final_score.draw(win)
+    score = points + accu
+    rankings(score, win)
 #END OF data_claculate_print()
+
+def rankings(score, win):
+
+    file_object = open('Rankings.txt')
+    content = file_object.readlines() 
+    place = 1
+    for line in content: 
+        for i in line: 
+            if i < score: 
+                place += i 
+    Leaderboard_text = Text(Point(450, 300), "You placed: ")
+    Leaderboard_text.setSize(20)
+    Leaderboard = Text(Point(560, 300), place)
+    Leaderboard.setSize(20)
+    Leaderboard_text.draw(win)
+    Leaderboard.draw(win)
+    file_object.write(score)
+    file_object.close()
+#END OF rankings
 
 def main():
     win, t, t2, t3, start = game_window_creation()
